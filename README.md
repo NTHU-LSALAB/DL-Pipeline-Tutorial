@@ -4,20 +4,21 @@
 
 # Environment
 - python
-2.
-3.
+- Keras
+- Tensorflow serving
 
 
-#Download and Training the model
+# Step1  Download and Training the model
 
 
-2.
+# Step2  Transform the model format
+        
 
 
-3.
+# Step3  Deploy the model as service
 
 
-4.
+#
 
 
-5.
+#
