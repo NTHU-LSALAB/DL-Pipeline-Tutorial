@@ -17,14 +17,14 @@
 ## <h2> Command Tutorial
 ![image](https://github.com/lsalab-member/DL-Pipeline-Tutorial/blob/main/tutorial.png)
 ## <h3> Part one: 
-`wget "https://drive.google.com/drive/u/0/my-drive?fbclid=IwAR2xzfwN0Ef7QlVbiPcoLL5YU-e1lIYtMOYbl0o-T-d3bHOXy-W6_tIA55I/%3Ffbclid=IwAR2pzCu3AeADcJmDDIjsBmlpSjc33BYZgzlh02ykJ_w4VeZhqFcz4KHaCpE" -O "top_model_weights.h5"`
+- `cd `
+-`wget "https://drive.google.com/drive/u/0/my-drive?fbclid=IwAR2xzfwN0Ef7QlVbiPcoLL5YU-e1lIYtMOYbl0o-T-d3bHOXy-W6_tIA55I/%3Ffbclid=IwAR2pzCu3AeADcJmDDIjsBmlpSjc33BYZgzlh02ykJ_w4VeZhqFcz4KHaCpE" -O "top_model_weights.h5"`
 `model_retrain/retrain.sh`
 
 
 - Data is located at `model_retrain/data/`.
 - `model_retrain/retrain.py` generates a new model at `model_retrain/model/`.
-- Write the trainging log to file `output_<version>_<accuracy>`.
-- This file is used to serve the website, which needs information about the model to display.
+- Write the trainging log to file `output_<version>_<accuracy>`.This file is used to serve the website, which needs information about the model to display.
 - After training a new model, the `.h5` file is copied to `saved_model/input_models/`.
 - `saved_model/export_saved_model.py` generate saved model to `saved_model/x_test/`.
 
