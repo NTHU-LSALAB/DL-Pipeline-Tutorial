@@ -3,14 +3,15 @@
 ![image](https://github.com/lsalab-member/DL-Pipeline-Tutorial/blob/main/螢幕快照%202020-12-06%20下午11.01.56.png)
 
 ## <h2> Environment
-- Python        3.8.5       
+- Python        3.6.9       
 `sudo apt-get install python3` 
 - pip3          20.3.1      
 `sudo apt-get install python3-pip`
-- Tensorflow    2.3.1
-`pip3 install tensorflow`
-- Keras         2.4.3      
-`pip3 install keras`
+``
+- Tensorflow    1.15.0
+`pip3 install tensorflow==1.15.0`
+- Keras         2.3.1      
+`pip3 install keras==2.3.1`
 - Docker        `Make sure that you have been installed!!`
 - Kubenetes     `Make sure that you have been installed!!`
 
@@ -44,9 +45,4 @@ If the newest model's performance is low, you may remove it with this script.
 ## <h2> Overall Command
 1.`model_retrain/retrain.sh`
 
-2.`model_retrain/model_remove_bad_perf.sh`
-
-3.`model_retrain/model_delete.sh`
-
-4.`model_retrain/model_delete.sh`
-
+2.`model_retrain/model_deploy.sh`
