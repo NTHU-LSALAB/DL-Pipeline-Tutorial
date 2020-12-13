@@ -1,7 +1,6 @@
 #!/bin/sh
 
-mv ~/photos/dog/* $HOME/DL-Pipeline-Tutorial/model_retrain/data/train/dog/
-mv ~/photos/cat/* $HOME/DL-Pipeline-Tutorial/model_retrain/data/train/cat/
+
 
 version=$(ls -1 $HOME/DL-Pipeline-Tutorial/saved_model/input_models | wc -l) # The model gonna be trained is the verison $version
 # echo Model version is: $version
