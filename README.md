@@ -15,6 +15,7 @@
 - Kubenetes     `Make sure that you have been installed!!`
 
 ## <h2> Command Tutorial
+![image](https://github.com/lsalab-member/DL-Pipeline-Tutorial/blob/main/tutorial.png)
 ## <h3> Part one: 
 `model_retrain/retrain.sh`
 
