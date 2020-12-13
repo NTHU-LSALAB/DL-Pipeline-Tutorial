@@ -23,7 +23,8 @@
 
 - Data is located at `model_retrain/data/`.
 - `model_retrain/retrain.py` generates a new model at `model_retrain/model/`.
-- Write the trainging log to file `output_<version>_<accuracy>`. This file is used to serve the website, which needs information about the model to display.
+- Write the trainging log to file `output_<version>_<accuracy>`.
+- This file is used to serve the website, which needs information about the model to display.
 - After training a new model, the `.h5` file is copied to `saved_model/input_models/`.
 - `saved_model/export_saved_model.py` generate saved model to `saved_model/x_test/`.
 
