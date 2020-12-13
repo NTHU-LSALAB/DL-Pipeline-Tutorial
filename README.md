@@ -3,6 +3,7 @@
 ![image](https://github.com/lsalab-member/DL-Pipeline-Tutorial/blob/main/螢幕快照%202020-12-06%20下午11.01.56.png)
 
 ## <h2> Environment
+- Ubuntu        18.04
 - Python        3.6.9       
 `sudo apt-get install python3` 
 - pip3          20.3.1      
