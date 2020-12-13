@@ -5,10 +5,10 @@
 ## <h2> Environment
 - Python        `sudo apt-get install python3.6` 
 - pip3          `sudo apt-get install python3-pip`
-- Tensorflow    ``
-- Keras         ``
+- Tensorflow    `pip3 install tensorflow`
+- Keras         `pip3 install keras`
 - Docker        `Make sure that you have been installed!!`
-- Kubenetes     `Make sure that you have benn installed!!`
+- Kubenetes     `Make sure that you have been installed!!`
 # Part one: `model_retrain/retrain.sh`
 1. Data is located at `model_retrain/data/`.
 2. `model_retrain/retrain.py` generates a new model at `model_retrain/model/`.
