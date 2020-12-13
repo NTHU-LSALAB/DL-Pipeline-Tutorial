@@ -3,10 +3,14 @@
 ![image](https://github.com/lsalab-member/DL-Pipeline-Tutorial/blob/main/螢幕快照%202020-12-06%20下午11.01.56.png)
 
 ## <h2> Environment
-- Python        `sudo apt-get install python3.6` 
-- pip3          `sudo apt-get install python3-pip`
-- Tensorflow    `pip3 install tensorflow`
-- Keras         `pip3 install keras`
+- Python        3.8.5       
+`sudo apt-get install python3.6` 
+- pip3          20.3.1      
+`sudo apt-get install python3-pip`
+- Tensorflow    2.3.1
+`pip3 install tensorflow`
+- Keras         2.4.3      
+`pip3 install keras`
 - Docker        `Make sure that you have been installed!!`
 - Kubenetes     `Make sure that you have been installed!!`
 
