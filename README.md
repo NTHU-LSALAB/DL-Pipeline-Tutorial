@@ -8,7 +8,6 @@
 - pip3          20.3.1      
 `sudo apt-get install python3-pip`
 `pip3 install --upgrade pip`
-
 - Tensorflow    1.15.0
 `pip3 install tensorflow==1.15.0`
 - Keras         2.3.1      
