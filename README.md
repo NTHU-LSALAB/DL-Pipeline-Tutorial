@@ -2,12 +2,13 @@
 ![image](https://github.com/lsalab-member/DL-Pipeline-Tutorial/blob/main/system.png)
 ![image](https://github.com/lsalab-member/DL-Pipeline-Tutorial/blob/main/螢幕快照%202020-12-06%20下午11.01.56.png)
 
-# Environment
-- Python 
-- Keras
-- Tensorflow serving
-
-
+## <h2> Environment
+- Python        `sudo apt-get install python3.6` 
+- pip3          `sudo apt-get install python3-pip`
+- Tensorflow    ``
+- Keras         ``
+- Docker        `Make sure that you have been installed!!`
+- Kubenetes     `Make sure that you have benn installed!!`
 # Part one: `model_retrain/retrain.sh`
 1. Data is located at `model_retrain/data/`.
 2. `model_retrain/retrain.py` generates a new model at `model_retrain/model/`.
