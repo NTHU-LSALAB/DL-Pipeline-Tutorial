@@ -9,7 +9,9 @@
 - Keras         `pip3 install keras`
 - Docker        `Make sure that you have been installed!!`
 - Kubenetes     `Make sure that you have been installed!!`
-## <h2> Part one: 
+
+## <h2> Command Tutorial
+## <h3> Part one: 
 `model_retrain/retrain.sh`
 
 
@@ -19,13 +21,13 @@
 - After training a new model, the `.h5` file is copied to `saved_model/input_models/`.
 - `saved_model/export_saved_model.py` generate saved model to `saved_model/x_test/`.
 
-## <h2> Part two: `model_retrain/model_remove_bad_perf.sh`
+## <h3> Part two: `model_retrain/model_remove_bad_perf.sh`
 If the newest model's performance is low, you may remove it with this script.
 
 ## <h3> Part three: `model_retrain/model_deploy.sh`
 Deploy a specific version model to the cluster. It writes a new yaml file at `deploy/tfserving_<version>.yml` and creates a new pod.
 
-## <h4> Part four: `model_retrain/model_delete.sh`
+## <h3> Part four: `model_retrain/model_delete.sh`
 Remove specific version of TF serving pod.
 
 
