@@ -19,7 +19,7 @@
 ![image](https://github.com/lsalab-member/DL-Pipeline-Tutorial/blob/main/tutorial.png)
 ## <h3> Part one: 
 `cd $HOME/DL-Pipeline-Tutorial/model_retrain/model`
-`wget "https://drive.google.com/drive/u/0/my-drive?fbclid=IwAR2xzfwN0Ef7QlVbiPcoLL5YU-e1lIYtMOYbl0o-T-d3bHOXy-W6_tIA55I/%3Ffbclid=IwAR2pzCu3AeADcJmDDIjsBmlpSjc33BYZgzlh02ykJ_w4VeZhqFcz4KHaCpE" -O "top_model_weights.h5"`
+`wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1zwrqgdkeHkxU7mwMHTtidkPK_10kNAW7' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1zwrqgdkeHkxU7mwMHTtidkPK_10kNAW7" -O top_model_weights.h5&& rm -rf /tmp/cookies.txt`
 
 -`model_retrain/retrain.sh`
 
