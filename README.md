@@ -6,6 +6,7 @@
 - Python        3.6.9       
 `sudo apt-get install python3` 
 - pip3          20.3.1      
+`pip3 install --upgrade pip`
 `sudo apt-get install python3-pip`
 ``
 - Tensorflow    1.15.0
