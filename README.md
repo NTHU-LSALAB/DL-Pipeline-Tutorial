@@ -4,7 +4,7 @@
 
 ## <h2> Environment
 - Python        3.8.5       
-`sudo apt-get install python3.6` 
+`sudo apt-get install python3` 
 - pip3          20.3.1      
 `sudo apt-get install python3-pip`
 - Tensorflow    2.3.1
