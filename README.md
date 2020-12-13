@@ -17,6 +17,7 @@
 ## <h2> Command Tutorial
 ![image](https://github.com/lsalab-member/DL-Pipeline-Tutorial/blob/main/tutorial.png)
 ## <h3> Part one: 
+`wget "https://drive.google.com/drive/u/0/my-drive?fbclid=IwAR2xzfwN0Ef7QlVbiPcoLL5YU-e1lIYtMOYbl0o-T-d3bHOXy-W6_tIA55I/%3Ffbclid=IwAR2pzCu3AeADcJmDDIjsBmlpSjc33BYZgzlh02ykJ_w4VeZhqFcz4KHaCpE" -O "top_model_weights.h5"`
 `model_retrain/retrain.sh`
 
 
