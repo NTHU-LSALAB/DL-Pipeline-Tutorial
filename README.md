@@ -13,8 +13,8 @@
 `pip3 install tensorflow==1.15.0`
 - Keras         2.3.1      
 `pip3 install keras==2.3.1`
-- Docker        `Make sure that you have been installed!!`
-- Kubenetes     `Make sure that you have been installed!!`
+- Docker        `Make sure that you have  installed!!`
+- Kubenetes     `Make sure that you have installed!!`
 
 ## <h2> Command Tutorial
 ![image](https://github.com/lsalab-member/DL-Pipeline-Tutorial/blob/main/tutorial.png)
