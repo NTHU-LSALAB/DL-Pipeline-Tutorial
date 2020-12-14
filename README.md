@@ -42,6 +42,8 @@ If the newest model's performance is low, you may remove it with this script.
 ## <h3> Part four:
 `model_retrain/model_delete.sh`
 - Remove specific version of TF serving pod.
+  
+## Part two and Part four is not necessary
 
 ## <h2> Overall Command
 1.Download the model
