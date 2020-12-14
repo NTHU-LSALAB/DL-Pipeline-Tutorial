@@ -22,7 +22,7 @@
 `cd $HOME/DL-Pipeline-Tutorial/model_retrain/model`
 `wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1zwrqgdkeHkxU7mwMHTtidkPK_10kNAW7' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1zwrqgdkeHkxU7mwMHTtidkPK_10kNAW7" -O top_model_weights.h5&& rm -rf /tmp/cookies.txt`
 
-`model_retrain/retrain.sh`
+`model_retrain/model_retrain.sh`
 
 
 - Data is located at `model_retrain/data/`.
@@ -49,7 +49,7 @@ If the newest model's performance is low, you may remove it with this script.
 `wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1zwrqgdkeHkxU7mwMHTtidkPK_10kNAW7' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1zwrqgdkeHkxU7mwMHTtidkPK_10kNAW7" -O top_model_weights.h5&& rm -rf /tmp/cookies.txt`
 
 2.Training script
-`model_retrain/retrain.sh`
+`model_retrain/model_retrain.sh`
 
 3.Deploy script
 `model_retrain/model_deploy.sh`
