@@ -1,6 +1,6 @@
 # DL-Pipeline-Tutorial
-![image](https://github.com/lsalab-member/DL-Pipeline-Tutorial/blob/main/system.png)
-![image](https://github.com/lsalab-member/DL-Pipeline-Tutorial/blob/main/螢幕快照%202020-12-06%20下午11.01.56.png)
+![image](https://github.com/NTHU-LSALAB/DL-Pipeline-Tutorial/blob/main/picture/system.png)
+![image](https://github.com/NTHU-LSALAB/DL-Pipeline-Tutorial/blob/main/picture/MLPipeline.png)
 
 ## <h2> Environment
 - Ubuntu        18.04
@@ -19,7 +19,7 @@
 `Make sure that you have installed!!`  
 
 ## <h2> Command Tutorial
-![image](https://github.com/lsalab-member/DL-Pipeline-Tutorial/blob/main/tutorial.png)
+![image](https://github.com/NTHU-LSALAB/DL-Pipeline-Tutorial/blob/main/picture/tutorial.png)
 ## <h3> Part one: 
 `cd $HOME/DL-Pipeline-Tutorial/model_retrain/model`  
 `wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1zwrqgdkeHkxU7mwMHTtidkPK_10kNAW7' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1zwrqgdkeHkxU7mwMHTtidkPK_10kNAW7" -O top_model_weights.h5&& rm -rf /tmp/cookies.txt`  
@@ -64,3 +64,37 @@ $ cd model_retrain/ && sudo ./model_deploy.sh $version $DockerName
 
 + $version: model version that you generated
 + $DockerName: Dockerhub account
+
+## <h2> Check
+
+Check the pod is running and get the IP of pod
+```
+$ kubectl get pod -o wide
+```
+![image](https://github.com/NTHU-LSALAB/DL-Pipeline-Tutorial/blob/main/picture/pod.PNG)
+Check the service and the NodePort  
+```
+$ kubectl get svc
+```
+![image](https://github.com/NTHU-LSALAB/DL-Pipeline-Tutorial/blob/main/picture/tfs-service.PNG)
+
+## <h2> Test
+
+1. get the metadata 
+
+  + the node address
+	```
+	$ curl $NodeIP:$NodePort/v1/models/x_test/metadata
+	```
+  + the pod address
+	```
+	$ curl $PodIP:$Port/v1/models/x_test/metadata
+	```
+  ![image](https://github.com/NTHU-LSALAB/DL-Pipeline-Tutorial/blob/main/picture/metadata.PNG)
+
+2. predict the picture
+
+```bash
+$ python3 test/client.py -i $picture -u $ip -p $port
+```
+  ![image](https://github.com/NTHU-LSALAB/DL-Pipeline-Tutorial/blob/main/picture/test_client.PNG)
