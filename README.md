@@ -61,5 +61,6 @@ $ cd model_retrain/ && ./model_retrain.sh
 ```bash
 $ cd model_retrain/ && sudo ./model_deploy.sh $version $DockerName
 ```
-	+ $version: model version that you generated
-	+ $DockerName: Dockerhub account
+
++ $version: model version that you generated
++ $DockerName: Dockerhub account
