@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: tfserving
-        image: cwhuang29/tf-serving:v1
+        image: {DockerName}/tf-serving:v1
         ports:
         - containerPort: 8501
           hostPort: 8501
