@@ -43,5 +43,5 @@ kubectl apply -f $HOME/DL-Pipeline-Tutorial/deploy/tfserving_v$version.yml
 # You don't need to apply the tfs-service.yml, just comment it:
 # 1. when the environment is KubeEdge
 # 2. do not want to open the service to the whole world
-kubectl apply -f -f $HOME/DL-Pipeline-Tutorial/deploy/tfs-service_v$version.yml
+kubectl apply -f $HOME/DL-Pipeline-Tutorial/deploy/tfs-service_v$version.yml
 
