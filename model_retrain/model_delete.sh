@@ -7,5 +7,5 @@ fi
 
 version=$1
 
-kubectl delete -f ~/keadm-v1.4.0-linux-amd64/keadm/tfservinag_v$versoin.yml
+kubectl delete -f ~/keadm-v1.4.0-linux-amd64/keadm/tfserving_v$version.yml
 
