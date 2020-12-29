@@ -15,7 +15,7 @@ DockerName=$2
 mkdir -p $HOME/DL-Pipeline-Tutorial/tf-serving/x_test
 cp -r $HOME/DL-Pipeline-Tutorial/saved_model/x_test/$version $HOME/DL-Pipeline-Tutorial/tf-serving/x_test/$version
 sed -i "s/rest_api_port=850[0-9]/rest_api_port=850$version/" $HOME/DL-Pipeline-Tutorial/tf-serving/Dockerfile
-docker build $HOME/DL-Pipeline-Tutorial/tf-serving -t $DockerName/tf-serving:v$version
+docker build $HOME/DL-Pipeline-Tutorial/tf-serving -t $DockerName/tf-serving:v$version --no-cache
 docker push $DockerName/tf-serving:v$version
 
 # tfserving.yml -> tfserving_v#.yml
